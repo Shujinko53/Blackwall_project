@@ -1,0 +1,13 @@
+@import "blocks/header";
+@import "blocks/nav-list";
+@import "blocks/user-list";
+
+* {
+    font-family: 'Inter', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: none;
+}
