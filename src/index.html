@@ -46,7 +46,11 @@
                     <p class="promo__text">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default</p>
                     <button class="button button_promo">Start for free</button>
                 </div>
-                <img class="promo__image" src="img/promo_img.png" alt="people">
+                <picture>
+                    <source type="image/png" media="(min-width: 1200px)" srcset="img/promo_img.png">
+                    <source type="image/png" media="(max-width: 540px)" srcset="img/promo_img_mobile.png">
+                    <img class="promo__image" srcset="img/promo_img.png" alt="people">
+                </picture>
             </div>
         </section>
     </main>

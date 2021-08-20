@@ -32,3 +32,22 @@
         background-color: #00ecd0;
     }
 }
+
+@media (max-width: 540px) {
+    .button {
+        width: 100px;
+        height: 36px;
+
+        font-size: 15px;
+        line-height: 27px;
+    
+        &_promo {
+            width: 120px;
+            height: 40px;
+            margin: 0 auto;
+            
+            font-size: 15px;
+            line-height: 27px;
+        }
+    }
+}
