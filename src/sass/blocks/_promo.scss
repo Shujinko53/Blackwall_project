@@ -1,0 +1,38 @@
+.promo {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1170px;
+        margin: 0 auto;
+        
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+        max-width: 500px;
+        padding-top: 150px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 600;
+        color: $main_color;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 34px;
+
+        font-size: 17px;
+        line-height: 28px;
+        color: $main_color;
+    }
+}

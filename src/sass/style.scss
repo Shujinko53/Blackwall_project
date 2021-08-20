@@ -1,6 +1,10 @@
+@import "global/variables";
+
 @import "blocks/header";
 @import "blocks/nav-list";
 @import "blocks/user-list";
+@import "blocks/promo";
+@import "blocks/buttons";
 
 * {
     font-family: 'Inter', sans-serif;
@@ -10,6 +14,29 @@
 
 .hamburger {
     display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 83px;
 }
 
 @media (max-width: 540px) {

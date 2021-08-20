@@ -1,0 +1,34 @@
+.button {
+    width: 136px;
+    height: 52px;
+
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: $main_color;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+
+    cursor: pointer;
+    transition: .2s all;
+
+    &:focus,
+    &:hover {
+        box-shadow: 3px 3px 5px 0 #818181;
+    }
+
+    &:active {
+        box-shadow: inset 0px 0px 10px 0 #fff;
+    }
+
+    &_promo {
+        width: 180px;
+        height: 66px;
+
+        color: #18216d;
+
+        background-color: #00ecd0;
+    }
+}
