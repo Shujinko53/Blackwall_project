@@ -1,0 +1,158 @@
+.achievements {
+    color: $main_color;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        display: block;
+        max-width: 495px;
+
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 500px;
+
+        div {
+            margin-right: 90px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__downloads {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        width: auto;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+                width: 16px;
+                height: 14px;
+                margin: 0 5px 12px 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        width: auto;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+                width: 16px;
+                height: 15px;
+                margin: 0 5px 12px 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__index {
+        margin-bottom: 10px;
+
+        font-size: 60px;
+        line-height: 70px;
+        
+        letter-spacing: -1px;
+        
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 540px) {
+    .achievements {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    
+        &__title {
+            width: calc(100% - 24px);
+            margin-bottom: 22px;
+
+            font-size: 20px;
+            line-height: 30px;
+        }
+    
+        &__list {
+            div {
+                margin-right: 75px;
+            }
+        }
+    
+        &__downloads {
+            width: auto;
+
+            div {
+                img {
+                    width: 8px;
+                    height: 7px;
+                    margin: 0 3px 8px 0;
+                }
+            }
+        }
+    
+        &__rating {
+            width: auto;
+
+            div {
+                img {
+                    width: 8px;
+                    height: 8px;
+                    margin: 0 3px 8px 0;
+                }
+            }
+        }
+
+        &__index {
+            font-size: 34px;
+            line-height: 30px;
+        }
+
+        &__descr {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+}
