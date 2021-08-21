@@ -1,0 +1,28 @@
+// ::-webkit-scrollbar {
+//     width: 2px;
+// }
+
+// ::-webkit-scrollbar-button {
+//     background-image: url('');
+//     background-repeat: no-repeat;
+//     width: 1px;
+//     height: 1px;
+// }
+    
+// ::-webkit-scrollbar-track {
+//     background-color:#2e2e2e;
+//     border: none;
+//     border-radius: 10px;
+// }
+    
+// ::-webkit-scrollbar-thumb {
+//     background-color: $main_color;
+//     outline: none;
+//     border-radius: 10px;
+// }
+@media (min-width: 1200px) {
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+}

@@ -1,0 +1,48 @@
+.clients {
+    width: 100%;
+    margin-bottom: 130px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        padding: 0;
+
+        list-style: none;
+
+        overflow-x: scroll;
+    }
+
+    &__item {
+        margin-right: 80px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .clients {
+        margin-bottom: 50px;
+
+        &__list {
+            margin: 0 12px;
+        }
+
+
+        &__item {
+            margin-right: 36px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
