@@ -1,4 +1,6 @@
 .achievements {
+    margin-bottom: 50px;
+    
     color: $main_color;
 
     &__container {
@@ -23,63 +25,39 @@
         justify-content: space-between;
         flex-wrap: wrap;
         max-width: 500px;
+    }
 
-        div {
-            margin-right: 90px;
+    &__downloads,
+    &__rating  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
 
-            &:last-child {
-                margin-right: 0;
-            }
-        }
+        width: auto;
     }
 
     &__downloads {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-
-        width: auto;
-
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            img {
-                width: 16px;
-                height: 14px;
-                margin: 0 5px 12px 0;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
+        margin-right: 90px;
     }
 
-    &__rating {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+    &__icon {
+        margin-bottom: 12px;
 
-        width: auto;
+        cursor: pointer;
 
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
+        &-like {
+            width: 92px;
+            height: 16px;
 
-            img {
-                width: 16px;
-                height: 15px;
-                margin: 0 5px 12px 0;
+            background: url('../icons/like.svg') space;
+        }
 
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
+        &-star {
+            width: 100px;
+            height: 16px;
+
+            background: url('../icons/star.svg') space;
         }
     }
 
@@ -101,6 +79,8 @@
 
 @media (max-width: 540px) {
     .achievements {
+        margin-bottom: 23px;
+
         &__container {
             flex-direction: column;
             align-items: center;
@@ -115,33 +95,30 @@
             line-height: 30px;
         }
     
-        &__list {
-            div {
-                margin-right: 75px;
-            }
+        &__downloads,
+        &__rating  {
+            width: auto;
         }
-    
+
         &__downloads {
-            width: auto;
-
-            div {
-                img {
-                    width: 8px;
-                    height: 7px;
-                    margin: 0 3px 8px 0;
-                }
-            }
+            margin-right: 75px;
         }
-    
-        &__rating {
-            width: auto;
 
-            div {
-                img {
-                    width: 8px;
-                    height: 8px;
-                    margin: 0 3px 8px 0;
-                }
+        &__icon {
+            margin-bottom: 10px;
+    
+            &-like {
+                width: 49px;
+                height: 8px;
+
+                background: url('../icons/like_mobile.svg') space;
+            }
+    
+            &-star {
+                width: 50px;
+                height: 8px;
+
+                background: url('../icons/star_mobile.svg') round;
             }
         }
 
