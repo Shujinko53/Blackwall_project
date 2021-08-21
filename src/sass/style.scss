@@ -1,4 +1,5 @@
 @import "global/variables";
+@import "global/scrollbar";
 
 @import "blocks/header";
 @import "blocks/nav-list";
@@ -7,6 +8,7 @@
 @import "blocks/buttons";
 @import "blocks/achievements";
 @import "blocks/features";
+@import "blocks/partners";
 
 * {
     font-family: 'Inter', sans-serif;
@@ -79,6 +81,35 @@
                 }
             }
         }
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: -25px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 20px;
+        height: 20px;
+    
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+    
+            background-color: #273551;
+    
+            transform: translateY(8px)rotate(45deg);
+    
+            &:last-child {
+                transform: translateY(-10px)rotate(-45deg);
+            }
+        }
+
+        cursor: pointer;
     }
 
     .page {

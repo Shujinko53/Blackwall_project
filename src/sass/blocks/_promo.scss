@@ -43,6 +43,8 @@
 
 @media (max-width: 540px) {
     .promo {
+        margin-bottom: 60px;
+        
         &__container {
             display: flex;
             flex-direction: column;
