@@ -1,0 +1,113 @@
+* {
+    font-family: 'Inter', sans-serif;
+
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+}
+
+@media (max-width: 540px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 28px;
+        height: 12px;
+
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 28px;
+            height: 2px;
+
+            background-color: #273551;
+
+            &.short {
+                width: 20px;
+            }
+        }
+
+        &--open {
+            span {
+                display: block;
+                width: 24px;
+                height: 2px;
+
+                transform: translateY(5px)rotate(45deg);
+                transition: .3s all;
+                
+                &.short {
+                    width: 24px;
+                    transform: translateY(-5px)rotate(-45deg);
+                    transition: .3s all;
+                }
+            }
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: -25px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 20px;
+        height: 20px;
+    
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+    
+            background-color: #273551;
+    
+            transform: translateY(8px)rotate(45deg);
+    
+            &:last-child {
+                transform: translateY(-10px)rotate(-45deg);
+            }
+        }
+
+        cursor: pointer;
+    }
+
+    .page {
+        max-width: 100%;
+    }
+}
